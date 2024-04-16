@@ -1,0 +1,56 @@
+@import 'variables';
+
+
+/* Definir una fuente personalizada */
+@font-face {
+    font-family: 'MiFuente';
+    src: url(../fonts/Akira\ Expanded\ Demo.otf) format('opentype'), /* Formato WOFF2 para navegadores modernos */
+    /* Puedes agregar más formatos de fuente aquí si es necesario */
+}
+
+body {
+    font-family: "MiFuente";
+    margin: 0;
+    background-image: url("../files/pexels-adrien-olichon-2387793.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+// Estilos Sass para el menú
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo img {
+        max-width: 250px;
+        margin-left: 20px;
+    }
+
+    nav {
+        margin-right: 120px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            
+            padding: 0;
+            display: flex;
+    
+            li {
+                margin-right: 50px;
+                font-size: $h1;
+                &:last-child {
+                    margin-right: 0;
+                }
+    
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    
+    } 
+}

@@ -1,0 +1,52 @@
+/* Definir una fuente personalizada */
+@font-face {
+  font-family: 'MiFuente';
+  src: url(../fonts/Akira\ Expanded\ Demo.otf) format("opentype");
+}
+/* line 11, ../sass/styles.scss */
+body {
+  font-family: "MiFuente";
+  margin: 0;
+  background-image: url("../files/pexels-adrien-olichon-2387793.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 20, ../sass/styles.scss */
+header {
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 27, ../sass/styles.scss */
+header .logo img {
+  max-width: 250px;
+  margin-left: 20px;
+}
+/* line 32, ../sass/styles.scss */
+header nav {
+  margin-right: 120px;
+}
+/* line 34, ../sass/styles.scss */
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+/* line 41, ../sass/styles.scss */
+header nav ul li {
+  margin-right: 50px;
+  font-size: 20px;
+}
+/* line 44, ../sass/styles.scss */
+header nav ul li:last-child {
+  margin-right: 0;
+}
+/* line 48, ../sass/styles.scss */
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
